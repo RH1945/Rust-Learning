@@ -113,3 +113,17 @@ fn fair_dice_roll() -> i32 {
         false => 4,
     }
 }
+
+//We already showed this earlier, but... Dots are typically used to access fields of a value:
+fn nickname() {
+    let a = (10, 20);
+    a.0; // this is 10
+
+    let amos = get_some_struct();
+    amos.nickname; // this is "fasterthanlime"
+}
+fn slow_nickname() {
+    let nick = "fasterthanlime";
+    nick.len(); // this is 14
+}
+
